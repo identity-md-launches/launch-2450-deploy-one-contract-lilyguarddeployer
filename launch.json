@@ -1,0 +1,14 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "LilyGuardDeployer",
+      "constructorArgs": [
+        "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+        "$owner",
+        "0x5Bff2a2FEcD1d6152676813b21346238733bEAB1"
+      ]
+    }
+  ],
+  "notes": "Deploy LilyGuardDeployer on Robinhood Chain. Its constructor searches salts from zero for the first CREATE2 address matching LilyGuard's permissions and creates the hook in the launch transaction, forwarding all three arguments unchanged. Neither constructor calls another contract except to create LilyGuard. Read the hook address through hook(). The creator initializes the native ETH/IMD pool afterwards; the launch creates no token or pool. LilyGuard accepts only native ETH as currency0 and existing IMD 0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127 as currency1. It charges a 1% ETH-side swap fee to the fixed recipient, minting claims when direct payment is unavailable; anyone may redeem a pool's claims through claimFees(PoolId). The owner's only administrative powers are pause(PoolId) and unpause(PoolId); liquidity removal remains available while paused."
+}
