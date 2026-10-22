@@ -1,0 +1,28 @@
+{
+  "hook": "BaseHook",
+  "name": "LilyGuard",
+  "pausable": true,
+  "currencySettler": false,
+  "safeCast": true,
+  "transientStorage": false,
+  "shares": { "options": false },
+  "permissions": {
+    "beforeInitialize": true,
+    "afterInitialize": false,
+    "beforeAddLiquidity": false,
+    "beforeRemoveLiquidity": false,
+    "afterAddLiquidity": false,
+    "afterRemoveLiquidity": false,
+    "beforeSwap": true,
+    "afterSwap": true,
+    "beforeDonate": false,
+    "afterDonate": false,
+    "beforeSwapReturnDelta": true,
+    "afterSwapReturnDelta": true,
+    "afterAddLiquidityReturnDelta": false,
+    "afterRemoveLiquidityReturnDelta": false
+  },
+  "inputs": {},
+  "access": "ownable",
+  "info": { "license": "MIT" }
+}

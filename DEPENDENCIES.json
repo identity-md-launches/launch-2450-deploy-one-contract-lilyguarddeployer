@@ -1,0 +1,20 @@
+[
+  {
+    "repository": "https://github.com/Uniswap/v4-core",
+    "commit": "46c6834698c48bc4a463a86d8420f4eb1d7f3b75",
+    "archive_sha256": "669c7c7903378bfd327072982008c447517c55b03d6ff1cb7bd9a7f04b6e47eb",
+    "scope": "src except src/test, and licenses"
+  },
+  {
+    "repository": "https://github.com/foundry-rs/forge-std",
+    "commit": "77041d2ce690e692d6e03cc812b57d1ddaa4d505",
+    "archive_sha256": "a387f7c2a10387f889b0d18b999cfa667a5273ac11cc11e18923022eb8b24bc3",
+    "scope": "src and licenses"
+  },
+  {
+    "repository": "https://github.com/transmissions11/solmate",
+    "commit": "89365b880c4f3c786bdd453d4b8e8fe410344a69",
+    "archive_sha256": "8a823fec83181106fdae58528f20203b7563aceaf077fc317f01ae18a229f235",
+    "scope": "src except src/test, and licenses"
+  }
+]
